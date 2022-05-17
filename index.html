@@ -1,1 +1,43 @@
 <div id="root"></div>
+<div id="rootone"></div>
+<div id="roottwo"></div>
+
+<script>
+  class Car {
+    constructor(name) {
+      this.brand = name;
+    }
+
+    present() {
+      return 'I have a ' + this.brand;
+    }
+  }
+
+  class Model extends Car {
+    constructor(name, mod) {
+      super(name);
+      this.model = mod;
+    }
+    show() {
+      return this.present() + ', it is a ' + this.model;
+    }
+  }
+
+  const mycar = new Model('Ford', 'Mustang');
+  document.write(mycar.show());
+</script>
+
+<script>
+  class Carone {
+    constructor(name) {
+      this.brand = name;
+    }
+
+    present() {
+      return 'I have a ' + this.brand;
+    }
+  }
+
+  const mycarone = new Carone('Ford');
+  document.getElementById('roottwo').innerHTML = '2' + mycarone.present();
+</script>
