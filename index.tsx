@@ -4,8 +4,8 @@ import { createRoot } from 'react-dom/client';
 
 import App from './App';
 
-import Name from './person';
-import Age from './person';
+import Name from './App';
+import Age from './App';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
