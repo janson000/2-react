@@ -1,6 +1,25 @@
 <div id="root"></div>
 <div id="rootone"></div>
 <div id="roottwo"></div>
+<div id="rootthree"></div>
+<div id="rootfour"></div>
+<div id="rootfive"></div>
+<div id="rootsix"></div>
+
+<script>
+  class Carone {
+    constructor(name) {
+      this.brand = name;
+    }
+
+    present() {
+      return 'I have a ' + this.brand;
+    }
+  }
+
+  const mycarone = new Carone('Ford');
+  document.getElementById('roottwo').innerHTML = '2' + mycarone.present();
+</script>
 
 <script>
   class Car {
@@ -24,20 +43,39 @@
   }
 
   const mycar = new Model('Ford', 'Mustang');
-  document.write(mycar.show());
+  document.getElementById('rootthree').innerHTML = '3' + mycar.show();
 </script>
 
 <script>
-  class Carone {
-    constructor(name) {
-      this.brand = name;
-    }
+  const vehicleOne = {
+    brand: 'Ford',
+    model: 'Mustang',
+    type: 'car',
+    year: 2021,
+    color: 'red',
+    registration: {
+      city: 'Houston',
+      state: 'Texas',
+      country: 'USA',
+    },
+  };
 
-    present() {
-      return 'I have a ' + this.brand;
-    }
+  myVehicle(vehicleOne);
+
+  function myVehicle({ model, registration: { state } }) {
+    const message = 'My ' + model + ' is registered in ' + state + '.';
+
+    document.getElementById('rootfour').innerHTML = 4 + message;
   }
+</script>
+//5
 
-  const mycarone = new Carone('Ford');
-  document.getElementById('roottwo').innerHTML = '2' + mycarone.present();
+<script>
+
+document.getElementById('rootfive').innerHTML = '5 My name is ' + "name";
+document.getElementById('rootsix').innerHTML += '6 I am ' + "age" + '.';
+</script>
+
+<script type="module">
+  import { name, age } from './person.js';
 </script>

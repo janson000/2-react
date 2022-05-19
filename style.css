@@ -1,3 +1,11 @@
-h1, p {
+h1,
+p {
   font-family: Lato;
+}
+#root {
+  background-image: radial-gradient(white, rgba(165, 42, 42, 0.863)) !important;
+}
+
+body {
+  background-color: aqua;
 }
