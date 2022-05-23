@@ -33,5 +33,5 @@ function Garage() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Garage />);
+const rootfive = ReactDOM.createRoot(document.getElementById('rootfive'));
+rootfive.render(<Garage />);
