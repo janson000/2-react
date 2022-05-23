@@ -5,8 +5,13 @@
 <div id="rootfour"></div>
 <div id="rootfive"></div>
 <div id="rootsix"></div>
+<div id="rootseven"></div>
+<div id="rooteight"></div>
+<div id="rootnine"></div>
+<div id="rootten"></div>
 
 <script>
+  //2
   class Carone {
     constructor(name) {
       this.brand = name;
@@ -22,6 +27,7 @@
 </script>
 
 <script>
+  //3
   class Car {
     constructor(name) {
       this.brand = name;
@@ -47,6 +53,7 @@
 </script>
 
 <script>
+  //4
   const vehicleOne = {
     brand: 'Ford',
     model: 'Mustang',
@@ -67,4 +74,27 @@
 
     document.getElementById('rootfour').innerHTML = 4 + message;
   }
+</script>
+
+<script>
+  //5
+  import React from 'react';
+  import ReactDOM from 'react-dom/client';
+
+  function Car(props) {
+    return <h2>I am a {props.brand}!</h2>;
+  }
+
+  function Garage() {
+    const carName = 'Ford';
+    return (
+      <>
+        <h1>Who lives in my garage?</h1>
+        <Car brand={carName} />
+      </>
+    );
+  }
+
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(<Garage />);
 </script>
