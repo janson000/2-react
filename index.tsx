@@ -38,7 +38,7 @@ function MyFormone() {
 
 const rootfive = ReactDOM.createrootfive(document.getElementById('rootfive'));
 rootfive.render(<MyFormone />);
-
+/*
 //6
 
 import { useState } from 'react';
