@@ -16,28 +16,17 @@ root.render(
 );
 
 //5
+import MyFormone from './App';
 
-import { useState } from 'react';
-import ReactDOM from 'react-dom/client';
+const rootElementfive = document.getElementById('rootfive');
+const rootfive = createRoot(rootElementfive);
 
-function MyFormone() {
-  const [textarea, setTextarea] = useState(
-    'The content of a textarea goes in the value attribute'
-  );
+rootfive.render(
+  <StrictMode>
+    <MyFormone />
+  </StrictMode>
+);
 
-  const handleChange = (event) => {
-    setTextarea(event.target.value);
-  };
-
-  return (
-    <Formone>
-      <textarea value={textarea} onChange={handleChange} />
-    </Formone>
-  );
-}
-
-const rootfive = ReactDOM.createrootfive(document.getElementById('rootfive'));
-rootfive.render(<MyFormone />);
 /*
 //6
 
@@ -97,5 +86,5 @@ const rootseven = ReactDOM.createrootseven(
   document.getElementById('rootseven')
 );
 rootseven.render(<MyFormthree />);
-
+*/
 //8
