@@ -20,7 +20,7 @@ root.render(
 import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 
-function MyForm() {
+function MyFormone() {
   const [textarea, setTextarea] = useState(
     'The content of a textarea goes in the value attribute'
   );
@@ -30,21 +30,21 @@ function MyForm() {
   };
 
   return (
-    <form>
+    <Formone>
       <textarea value={textarea} onChange={handleChange} />
-    </form>
+    </Formone>
   );
 }
 
 const rootfive = ReactDOM.createrootfive(document.getElementById('rootfive'));
-rootfive.render(<MyForm />);
+rootfive.render(<MyFormone />);
 
 //6
 
 import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 
-function MyForm() {
+function MyFormtwo() {
   const [name, setName] = useState('');
 
   const handleSubmit = (event) => {
@@ -53,7 +53,7 @@ function MyForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <Formtwo onSubmit={handleSubmit}>
       <label>
         Enter your name:
         <input
@@ -63,19 +63,19 @@ function MyForm() {
         />
       </label>
       <input type="submit" />
-    </form>
+    </Formtwo>
   );
 }
 
 const rootsix = ReactDOM.createRoot(document.getElementById('rootsix'));
-rootsix.render(<MyForm />);
+rootsix.render(<MyFormtwo />);
 
 //7
 
 import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 
-function MyForm() {
+function MyFormthree() {
   const [myCar, setMyCar] = useState('Volvo');
 
   const handleChange = (event) => {
@@ -83,19 +83,19 @@ function MyForm() {
   };
 
   return (
-    <form>
+    <Formthree>
       <select value={myCar} onChange={handleChange}>
         <option value="Ford">Ford</option>
         <option value="Volvo">Volvo</option>
         <option value="Fiat">Fiat</option>
       </select>
-    </form>
+    </Formthree>
   );
 }
 
 const rootseven = ReactDOM.createrootseven(
   document.getElementById('rootseven')
 );
-rootseven.render(<MyForm />);
+rootseven.render(<MyFormthree />);
 
 //8
