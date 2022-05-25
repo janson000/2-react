@@ -15,7 +15,7 @@ root.render(
   </StrictMode>
 );
 
-//5
+/* //5
 import MyFormone from './App';
 
 const rootElementfive = document.getElementById('rootfive');
@@ -27,7 +27,7 @@ rootfive.render(
   </StrictMode>
 );
 
-/*
+
 //6
 
 import { useState } from 'react';
