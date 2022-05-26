@@ -22,7 +22,7 @@ root.render(
 //5
 function FavoriteColor() {
   const [color, setColor] = useState('violet');
-  const [colortwo, setColor] = useState('indigo');
+  const [colortwo, setColortwo] = useState('indigo');
 
   return (
     <>
