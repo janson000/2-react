@@ -2,8 +2,9 @@ import * as React from 'react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-//5
-import React, { useState } from 'react';
+//7
+
+import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 
 //1
@@ -20,6 +21,12 @@ root.render(
 );
 /*
 //5
+
+
+//5
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom/client';
+
 function FavoriteColor() {
   const [color, setColor] = useState('violet');
 
@@ -66,9 +73,6 @@ const rootsix = ReactDOM.createroot(document.getElementById('rootsix'));
 rootsix.render(<Car />);
 */
 //7
-
-import { useState } from 'react';
-import ReactDOM from 'react-dom/client';
 
 function Car() {
   const [car, setCar] = useState({
