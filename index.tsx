@@ -44,7 +44,7 @@ function FavoriteColor() {
 
 const rootfive = ReactDOM.createRoot(document.getElementById('rootfive'));
 rootfive.render(<FavoriteColor />);
-*/
+
 //6
 function Car() {
   const [brand, setBrand] = useState('Ford');
@@ -56,7 +56,7 @@ function Car() {
     <>
       <h1>My {brand}</h1>
       <p>
-        It is a {colortwo} {model} from {year}.
+        It is a {colortwo}, {model} from {year}.
       </p>
     </>
   );
@@ -64,3 +64,38 @@ function Car() {
 
 const rootsix = ReactDOM.createroot(document.getElementById('rootsix'));
 rootsix.render(<Car />);
+*/
+//7
+
+import { useState } from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Car() {
+  const [car, setCar] = useState({
+    brand: 'Ford',
+    model: 'Mustang',
+    year: '1964',
+    color: 'red',
+  });
+
+  const updateColor = () => {
+    setCar((previousState) => {
+      return { ...previousState, color: 'blue' };
+    });
+  };
+
+  return (
+    <>
+      <h1>My {car.brand}</h1>
+      <p>
+        It is a {car.color} {car.model} from {car.year}.
+      </p>
+      <button type="button" onClick={updateColor}>
+        Blue
+      </button>
+    </>
+  );
+}
+
+const rootseven = ReactDOM.createroot(document.getElementById('rootseven'));
+rootseven.render(<Car />);
