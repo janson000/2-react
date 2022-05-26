@@ -51,7 +51,7 @@ function Car() {
   const [brand, setBrand] = useState('Ford');
   const [model, setModel] = useState('Mustang');
   const [year, setYear] = useState('1964');
-  const [colortwo, setColor] = useState('red');
+  const [colortwo, setColortwo] = useState('red');
 
   return (
     <>
