@@ -18,7 +18,7 @@ root.render(
     <App />
   </StrictMode>
 );
-
+/*
 //5
 function FavoriteColor() {
   const [color, setColor] = useState('violet');
@@ -44,7 +44,7 @@ function FavoriteColor() {
 
 const rootfive = ReactDOM.createRoot(document.getElementById('rootfive'));
 rootfive.render(<FavoriteColor />);
-
+*/
 //6
 function Car() {
   const [brand, setBrand] = useState('Ford');
