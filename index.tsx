@@ -62,5 +62,5 @@ function Car() {
   );
 }
 
-const rootsix = ReactDOM.createrootsix(document.getElementById('rootsix'));
+const rootsix = ReactDOM.createroot(document.getElementById('rootsix'));
 rootsix.render(<Car />);
