@@ -1,5 +1,12 @@
+import * as React from 'react';
+import './style.css';
 
-function Timer() {
+//8
+
+import { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom/client';
+
+export default function Apptwo() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -10,6 +17,3 @@ function Timer() {
 
   return <h1>I have rendered {count} times!</h1>;
 }
-
-const rooteight = ReactDOM.createroot(document.getElementById('rooteight'));
-rooteight.render(<Timer />);

@@ -2,10 +2,8 @@ import * as React from 'react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-//7
 
-import { useState } from 'react';
-import ReactDOM from 'react-dom/client';
+
 
 //1
 import App from './App';
@@ -19,6 +17,19 @@ root.render(
     <App />
   </StrictMode>
 );
+
+import Apptwo from './Apptwo';
+
+//1
+const rootElementtwo = document.getElementById('rooteight');
+const rooteight = createRoot(rootElementtwo);
+
+rooteight.render(
+  <StrictMode>
+    <Apptwo />
+  </StrictMode>
+);
+
 /*
 //5
 
@@ -71,7 +82,12 @@ function Car() {
 
 const rootsix = ReactDOM.createroot(document.getElementById('rootsix'));
 rootsix.render(<Car />);
-*/
+
+//7
+
+import { useState } from 'react';
+import ReactDOM from 'react-dom/client';
+
 //7
 
 function Car() {
@@ -103,3 +119,4 @@ function Car() {
 
 const rootseven = ReactDOM.createroot(document.getElementById('rootseven'));
 rootseven.render(<Car />);
+*/
